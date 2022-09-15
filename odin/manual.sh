@@ -1,4 +1,4 @@
-printCyan "4. Building binaries..." && sleep 1
+# Manual Installation Script
 
 cd || return
 rm -rf odin-core
