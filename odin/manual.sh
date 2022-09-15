@@ -1,3 +1,5 @@
+printCyan "4. Building binaries..." && sleep 1
+
 cd || return
 rm -rf odin-core
 git clone https://github.com/ODIN-PROTOCOL/odin-core.git
