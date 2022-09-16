@@ -12,9 +12,9 @@ done
  
 version=${VER:-"1.18.3"}
  
-curl -L -# -O "https://golang.org/dl/go$version.linux-amd64.tar.gz"
+curl -L -# -O "https://golang.org/dl/go$version.linux-amd64.tar.gz" >> "$LOG_PATH" 2>&1
 sudo rm -rf /usr/local/go
-sudo tar -C /usr/local -xzf "go$version.linux-amd64.tar.gz"
+sudo tar -C /usr/local -xzf "go$version.linux-amd64.tar.gz" >> "$LOG_PATH" 2>&1
 rm "go$version.linux-amd64.tar.gz"
  
 touch $HOME/.bash_profile
