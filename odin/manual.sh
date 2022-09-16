@@ -11,7 +11,7 @@ make all
 <BINARY> version
 
 # initialising Binary and Adjusting Fess and Peers
-<BINARY> init $NODE_MONIKER --chain-id $CHAIN_ID
+<BINARY> init $NODE_MONIKER --chain-id <CHAINID>
 curl https://raw.githubusercontent.com/ODIN-PROTOCOL/networks/master/mainnets/odin-mainnet-freya/genesis.json > <DIRECTORY>/config/genesis.json
 
 perl -i -pe 's/^minimum-gas-prices = .+?$/minimum-gas-prices = "0.0125<DENOM>"/' <DIRECTORY>/config/app.toml
@@ -29,7 +29,7 @@ sed -i 's|^snapshot-interval *=.*|snapshot-interval = 0|g' <DIRECTORY>/config/ap
 #Setting Up Service
 sudo tee /etc/systemd/system/<BINARY>.service > /dev/null << EOF
 [Unit]
-Description=Odin Node
+Description=<CHAINID> Node
 After=network-online.target
 [Service]
 User=$USER
