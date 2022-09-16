@@ -16,8 +16,8 @@ curl https://raw.githubusercontent.com/ODIN-PROTOCOL/networks/master/mainnets/od
 
 perl -i -pe 's/^minimum-gas-prices = .+?$/minimum-gas-prices = "0.0125<DENOM>"/' <DIRECTORY>/config/app.toml
 
-SEEDS="4529fc24a87ff5ab105970f425ced7a6c79f0b8f@odin-seed-01.mercury-nodes.net:29536,c8ee9f66163f0c1220c586eab1a2a57f6381357f@odin.seed.rhinostake.com:16658"
-PEERS="9d16b1ce74a34b869d69ad5fe34eaca614a36ecd@35.241.238.207:26656,02e905f49e1b869f55ad010979931b542302a9e6@35.241.221.154:26656,4847c79f1601d24d3605278a0183d416a99aa093@34.140.252.7:26656,0165cd0d60549a37abb00b6acc8227a54609c648@34.79.179.216:26656"
+SEEDS="<SEEDS>"
+PEERS="<PEERS>"
 sed -i -e 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' <DIRECTORY>/config/config.toml
  
 # in case of pruning
