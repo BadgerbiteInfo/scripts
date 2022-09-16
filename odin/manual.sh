@@ -2,11 +2,11 @@
 
 #Cloning Repo and Building Binary
 cd || return
-rm -rf odin-core
-git clone https://github.com/ODIN-PROTOCOL/odin-core.git
-cd odin-core || return
+rm -rf <GITHUB REPO>
+git clone <GITHUB><GITHUB REPO>.git
+cd <GITHUB REPO> || return
 git fetch --tags
-git checkout v0.6.0
+git checkout <VERSION>
 make all
 <BINARY> version
 
