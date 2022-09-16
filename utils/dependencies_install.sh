@@ -1,5 +1,6 @@
 #!/bin/bash
 LOG_FILE="install.log"
+LOG_PATH=$HOME_FOLDER/$LOG_FILE
 
 source <(curl -s https://raw.githubusercontent.com/nodejumper-org/cosmos-utils/main/utils/common.sh)
 
