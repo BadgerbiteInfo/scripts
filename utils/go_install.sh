@@ -1,5 +1,8 @@
 #!/bin/bash
  
+LOG_FILE="install.log"
+LOG_PATH=$HOME_FOLDER/$LOG_FILE
+
 while getopts v: flag; do
   case "${flag}" in
   v) VER=$OPTARG ;;
