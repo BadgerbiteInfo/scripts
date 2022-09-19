@@ -12,7 +12,7 @@ make all
 
 # initialising Binary and Adjusting Fess and Peers
 <BINARY> init $NODE_MONIKER --chain-id <CHAINID>
-curl https://raw.githubusercontent.com/ODIN-PROTOCOL/networks/master/mainnets/odin-mainnet-freya/genesis.json > <DIRECTORY>/config/genesis.json
+curl <GENESIS> > <DIRECTORY>/config/genesis.json
 
 perl -i -pe 's/^minimum-gas-prices = .+?$/minimum-gas-prices = "0.0125<DENOM>"/' <DIRECTORY>/config/app.toml
 
