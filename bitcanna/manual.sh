@@ -7,7 +7,7 @@ git clone <GITHUB><GITHUB REPO>.git
 cd <GITHUB REPO> || return
 git fetch --tags
 git checkout <VERSION>
-make all
+make <MAKE>
 <BINARY> version
 
 # initialising Binary and Adjusting Fess and Peers
