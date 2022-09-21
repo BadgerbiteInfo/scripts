@@ -5,8 +5,6 @@ cd || return
 rm -rf <GITHUB REPO>
 git clone <GITHUB><GITHUB REPO>.git
 cd <GITHUB REPO> || return
-git fetch --tags
-git checkout <VERSION>
 make <MAKE>
 <BINARY> version
 
